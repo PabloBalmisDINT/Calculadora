@@ -24,5 +24,11 @@ namespace Calculadora
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Button boton = (Button)sender;
+            pantalla.Text += boton.Tag.ToString();
+        }
     }
 }
