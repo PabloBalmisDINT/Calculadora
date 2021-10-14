@@ -10,6 +10,13 @@
         Width="355"
         MinHeight="455"
         MinWidth="355">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <EventSetter Event="Click" Handler="Button_Click"></EventSetter>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -32,72 +39,63 @@
         </Viewbox>
         <Button Grid.Row="2"
                 Grid.Column="0"
-                Tag="1"
-                Click="Button_Click">
+                Tag="1">
             <Viewbox>
                 <TextBlock>1</TextBlock>
             </Viewbox>
         </Button>
         <Button Grid.Row="2"
                 Grid.Column="1"
-                Tag="2"
-                Click="Button_Click">
+                Tag="2">
             <Viewbox>
                 <TextBlock>2</TextBlock>
             </Viewbox>
         </Button>
         <Button Grid.Row="2"
                 Grid.Column="2"
-                Tag="3"
-                Click="Button_Click">
+                Tag="3">
             <Viewbox>
                 <TextBlock>3</TextBlock>
             </Viewbox>
         </Button>
         <Button Grid.Row="3"
                 Grid.Column="0"
-                Tag="4"
-                Click="Button_Click">
+                Tag="4">
             <Viewbox>
                 <TextBlock>4</TextBlock>
             </Viewbox>
         </Button>
         <Button Grid.Row="3"
                 Grid.Column="1"
-                Tag="5"
-                Click="Button_Click">
+                Tag="5">
             <Viewbox>
                 <TextBlock>5</TextBlock>
             </Viewbox>
         </Button>
         <Button Grid.Row="3"
                 Grid.Column="2"
-                Tag="6"
-                Click="Button_Click">
+                Tag="6">
             <Viewbox>
                 <TextBlock>6</TextBlock>
             </Viewbox>
         </Button>
         <Button Grid.Row="4"
                 Grid.Column="0"
-                Tag="7"
-                Click="Button_Click">
+                Tag="7">
             <Viewbox>
                 <TextBlock>7</TextBlock>
             </Viewbox>
         </Button>
         <Button Grid.Row="4"
                 Grid.Column="1"
-                Tag="8"
-                Click="Button_Click">
+                Tag="8">
             <Viewbox>
                 <TextBlock>8</TextBlock>
             </Viewbox>
         </Button>
         <Button Grid.Row="4"
                 Grid.Column="2"
-                Tag="9"
-                Click="Button_Click">
+                Tag="9">
             <Viewbox>
                 <TextBlock>9</TextBlock>
             </Viewbox>
@@ -105,8 +103,7 @@
         <Button Grid.Row="5"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
-                Tag="0"
-                Click="Button_Click">
+                Tag="0">
             <Viewbox>
                 <TextBlock>0</TextBlock>
             </Viewbox>
